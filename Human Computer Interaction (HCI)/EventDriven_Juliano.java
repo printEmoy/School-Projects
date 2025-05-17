@@ -1,10 +1,8 @@
-package juliano_Java_GUI;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class EventDriven_Juliano extends JFrame implements ActionListener
+public class EventDriven extends JFrame implements ActionListener
 {
 	
 	FlowLayout f1 = new FlowLayout();
@@ -17,7 +15,7 @@ public class EventDriven_Juliano extends JFrame implements ActionListener
 	JButton Submitbt = new JButton("Submit");
 	JButton Clearbt = new JButton ("Clear");
 	
-	public EventDriven_Juliano() 
+	public EventDriven() 
 	{
 		super("INPUT");
 		setSize(250, 400);
@@ -84,7 +82,7 @@ public class EventDriven_Juliano extends JFrame implements ActionListener
 	
 	public static void main(String[] args)
 	{
-		EventDriven_Juliano frame = new EventDriven_Juliano();
+		EventDriven frame = new EventDriven();
 		frame.setVisible(true);
 	}
 }
